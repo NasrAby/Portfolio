@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+
+html { 
+    height: 100%; 
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+    font-family: "Open Sans", sans-serif;
+}
+
+.logo a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#about-me {
+    width: 40%;
+    padding: 20px;
+    margin: 20px 30px;
+}
+
+h2 {
+    font-family: "Proza Libre", sans-serif;
+}
+
+.my-image {
+    position: absolute;
+    width: 25%;
+    border-radius: 50%;
+    top: 90px;
+    left: 55%;
+}
+
+.projects, .skills {
+    padding: 20px;
+    margin: 20px 30px;    
+}
+
+details {
+    cursor: pointer;
+}
+
+.footer {
+	position: relative;
+	background-color:#1A1F24;
+	width: 100%;
+	bottom: 0;
+    color: white;
+    background-color: black;
+    text-align: center;
+} 
+
+footer .fab {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background-color: #55ACEE;
+    margin: 10px;
+}
+
+.fa-linkedin {
+    background-color: #0e76a8;
+    margin: 10px;
+}
+
+.fa-github {
+    margin: 10px;
+}
+
+.fa-google {
+    background-color: #DB4437;
+}
+
+.skills .fab {
+    padding: 5px;
+    font-size: 50px;
+    width: 90px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.fa-react, .fa-python {
+    color: gray;
+}
+
+.project a {
+    color: turquoise;
+}
