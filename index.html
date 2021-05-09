@@ -2,68 +2,67 @@
 <html>
 <head>
     <title>Nasr Aboudaouya</title>
+    <meta charset=“UTF-8”>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header id="home">
+        <nav id="nav">
             <div class="logo">
                 <a href="#">Nasr Aboudaouya</a>
             </div>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="nav-links">
                 <li><a href="#about-me" class="navigation-items">About Me</a></li>
                 <li><a href="#projects" class="navigation-items">Projects</a></li>
                 <li><a href="#skills" class="navigation-items">Skills</a></li>
                 <li><a href="#contacts" class="navigation-items">Contacts</a></li>
             </ul>
+            <div id="mySidenav" class="sidenav">
+                <a class="close-btn"><i class="fas fa-close"></i></a>
+                <a href="#about-me" class="sidenav-items">About Me</a>
+                <a href="#projects" class="sidenav-items">Projects</a>
+                <a href="#skills" class="sidenav-items">Skills</a>
+                <a href="#contacts" class="sidenav-items">Contacts</a>
+            </div>
         </nav>
+        <!-- banner -->
+        <div class="banner1">
+            <div class="container">
+                <img src="./images/My-image.jpg" alt="" class="image">
+                <h1>Portfolio project</h1>
+                <p>Simplicity is the key</p>
+                <a href="#about-me" class="scroll-link btn btn-white">Explore My Portfolio</a>
+            </div>
+        </div>
     </header>
+    
     <main>
-        <section id="about-me">
-                <div class="banner">
-                    <img src="./images/My-image.jpg" alt="My image" class="my-image">
-                    <div class="about-me">
-                        <h1>About Me</h1>
-                        <p>
-                            My name is Nasr Aboudaouya. 
-                            I am a graduated student in computer science. 
-                            Now, I am looking for my first full-time job. 
-                            I have been working as a freelance web developer for the last month. 
-                            I cannot say with 100% confidence where I see myself in five years 
-                            or what my big career goal is. The world is changing rapidly, and I 
-                            don’t have enough professional experience to be certain about such things. 
-                            However, I know that I can provide a fresh take and an extraordinary 
-                            approach to every project. I am always open to challenges and constructive 
-                            feedback. I am open-minded and learn new things quickly. I want to become a 
-                            team player and dedicate all my skills and talents to develop high-quality 
-                            and unique products.
-                        </p>
-                        <p>
-                            Fun fact! I've been programing for
-                            <span id="time-container">00:00:00</span> seconds!
-                        </p>
-                    </div>
-                    <div class="education">
-                        <h1>Education</h1>
-                        <p>
-                            <u>Oct, 2020</u><br>
-                            Licence Degree In Computer Science <br>
-                            <i>University of Mohammed V, Rabat</i>
-                        </p>
-                    </div>
-                    <div class="languages">
-                        <h1>Languages</h1>
-                        <img src="./images/morocco.png" alt="arabic" class="arabic"/><p><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></p>
-                        <img src="./images/france.png" alt="french" class="french" /><p><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></p>
-                        <img src="./images/united-kingdom.png" alt="english" class="english" /><p><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></p>
-                        <img src="./images/spain.png" alt="spanish" class="spanish" /><p><i class="fas fa-circle"></i></p> 
-                    </div>
-                    
+        <section id="about-me" class="about-me">
+            <div class="content">
+                <h2>About me</h2>
+                <p><span class="wave">&#x1F44B;</span>
+                My name is Nasr Aboudaouya. 
+                I am a graduated student in computer science. 
+                Now, I am looking for my first full-time job. 
+                I have been working as a freelance web developer for the last month. 
+                I cannot say with 100% confidence where I see myself in five years 
+                or what my big career goal is. The world is changing rapidly, and I 
+                don't have enough professional experience to be certain about such things. 
+                However, I know that I can provide a fresh take and an extraordinary 
+                approach to every project. I am always open to challenges and constructive 
+                feedback. I am open-minded and learn new things quickly. I want to become a 
+                team player and dedicate all my skills and talents to develop high-quality 
+                and unique products.
+                </p>
             </div>
         </section>
         <section id="projects" class="projects">
+            <div class="content">
             <h2>Projects</h2>
                 <details class="project">
                     <summary class="project-title">
@@ -75,20 +74,32 @@
                         <br>
                         <a href="https://github.com/NasrAby/SkylineApp" target="_blank">GitHub link</a>
                     </p>
-              </details>
+                </details>
+                <details class="project">
+                    <summary class="project-title">
+                        Grocery Bud
+                    </summary>
+                    <img src="" alt="" class="" />
+                    <p class="project-description">
+                        Grocery List Built in JavaScript.
+                        <br>
+                        <a href="https://github.com/NasrAby/Grocery-Bud" target="_blank">GitHub link</a>
+                    </p>
+                </details>
+            </div>
             </div>
         </section>
         <section id="skills" class="skills">
             <h2>Skills</h2>
             <div class="grid-skills">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3"></i>
-            <i class="fab fa-js"></i>
-            <i class="fab fa-java"></i>
-            <i class="fab fa-github-square"></i>
-            <i class="fab fa-git"></i>
-            <i class="fab fa-react"></i>
-            <i class="fab fa-python"></i>
+                <i class="fab fa-html5"><p>HTML5</p></i>
+                <i class="fab fa-css3"><p>CSS3</p></i>
+                <i class="fab fa-js"><p>JavaScript</p></i>
+                <i class="fab fa-java"><p>Java</p></i>
+                <i class="fab fa-github-square"><p>GitHub</p></i>
+                <i class="fab fa-git"><p>git</p></i>
+                <i class="fab fa-react"><p>React</p></i>
+                <i class="fab fa-python"><p>Python</p></i>
             </div>
         </section>
     </main>
@@ -101,8 +112,9 @@
             <a href= "https://www.linkedin.com/in/nasr-aboudaouya-10a1621a2/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
         <p>
-            Copyright &copy; 2021 | Nasr Aboudaouya 
+            Copyright &copy; <span id="date"></span> | Nasr Aboudaouya 
         </p>
     </footer>  
+    <script src="app.js"></script>
 </body>
 </html>
